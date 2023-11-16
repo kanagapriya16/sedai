@@ -1,0 +1,16 @@
+.shadow-effect {
+    background: rgb(73, 83, 83);
+    height: 7vh;
+    border-radius: 60px; 
+position: relative;
+    text-align:end;
+    display: flex;
+    color: white;
+    margin-top: 5%;
+    font-weight:bolder;
+    font-size: medium;
+    margin-left: 3%;
+  
+   
+    
+}

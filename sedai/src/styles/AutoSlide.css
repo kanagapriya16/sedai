@@ -1,0 +1,128 @@
+.autoslide {
+    height: 95vh;
+    width: 100%;
+    background-color: #000d1a;
+
+}
+
+.slide-row {
+    display: flex;
+    flex-direction: row;
+    animation: 20s slideAnimation infinite linear;
+    width: 180%;
+    position: relative;
+    white-space: nowrap;
+
+}
+
+@keyframes slideAnimation {
+    from {
+        transform: translateX(0);
+    }
+
+    to {
+        transform: translate(-100%);
+    }
+}
+
+
+.slide {
+    height: 450px;
+    width: 450px;
+    background-color: #000d1a;
+    border-radius: 2%;
+    margin-top: 20px;
+    margin-right: 20px;
+    border-style: solid;
+    border-width: 1px;
+    border-color: grey;
+    box-sizing: border-box;
+    flex-shrink: 0;
+    display: inline-block;
+
+}
+
+.slide p {
+    font-size: 19px;
+    font-weight: bold;
+    color: #d9e5f2;
+}
+
+.circular-square {
+    height: 15%;
+    width: 15%;
+    border-radius: 50%;
+    border-top-left-radius: 50% 50%;
+    border-top-right-radius: 50% 50%;
+    border-bottom-right-radius: 50% 50%;
+    border-bottom-left-radius: 50% 50%;
+    border-style: solid;
+    border-width: 5px;
+    border-color: rgba(135, 206, 235, 0.1);
+    margin-top: 20%;
+    margin-left: 8%;
+}
+
+.slide-row:hover {
+    animation-play-state: paused;
+}
+
+.slide:hover {
+  
+    border: 2px solid transparent;
+    background:
+        linear-gradient(#000d1a, #000d1a) padding-box,
+        linear-gradient(125deg, #42E4A3, #A383E8) border-box;
+    border-width: 2px;
+    border-style: solid;
+}
+
+
+@keyframes slide {
+    from {
+        transform: translateX(0);
+    }
+
+    to {
+        transform: translate(-100%);
+    }
+}
+
+.logos {
+    overflow: hidden;
+    padding: 60px 0;
+    background: #000d1a;
+    white-space: nowrap;
+    position: relative;
+    margin-top: -350px;
+}
+
+.logos::before,
+.logos::after {
+    position: absolute;
+    top: 0;
+    width: 150px;
+    height: 100%;
+    content: "";
+    z-index: 2;
+}
+
+.logos::before {
+    left: 0;
+    background-color: #000d1a;
+}
+
+.logos::after {
+    right: 0;
+    background-color: #000d1a;
+}
+
+.logo-slide {
+    display: inline-block;
+    animation: 10s slide infinite linear;
+}
+
+.logo-slide img {
+    height: 50px;
+    margin: 0 40px;
+}
