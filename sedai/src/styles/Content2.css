@@ -1,0 +1,26 @@
+.text-container2{
+    flex-direction: row;
+     justify-content: space-between;
+ text-align: left;
+ display: flex;
+ }
+ .textcontainer2{
+     display: flex;
+     flex-direction: column;
+     justify-content: space-between;
+   
+ }
+ .text-container2 {
+     word-wrap: break-word;
+   }
+  .contentimg{
+     height: 70vh;
+     width: 45vw;
+     margin-left: 8%;   
+  
+  }
+ .break{
+     height: 80vh;
+     margin-top: -90%;
+ }
+  
